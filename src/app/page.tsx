@@ -2,74 +2,38 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className='h-screen text-white  Parent bg-slate-900'>
-      <div className='container px-2'>
-        {/* Layout position */}
-        <div className='relative w-64 h-64 p-8 bg-red-500 rounded-lg'>
-          {/* TODO fixed  */}
-          <div className='fixed top-0'> Color table</div>
-          <div className='absolute top-0 -left-2 w-24 h-24 bg-green-500 rounded-lg'></div>
-          <div className='absolute inset-6 w-24 h-24 bg-blue-500 rounded-lg'></div>
+    <main className='text-white Parent bg-slate-900 h-screen '>
+      <div className='container'>
+        {/* visibility */}
+        <div className='grid grid-cols-3 gap-4'>
+          <div className='bg-teal-500'>01</div>
+          <div className='bg-teal-500 invisible'>02</div>
+          <div className='bg-teal-500'>03</div>
         </div>
-      </div>
-      <div className='container px-2'>
-        {/* overflow over-flow-visivle, over-flow-hidden*/}
-        <div className='max-w-md overflow-auto'>
-          <div className='overflow-x-auto flex'>
-            <img
-              className='flex-none py-6 px-3 first:p1-6 last:pr-6 w-64 h-64 rounded-full'
-              src='https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1'
-              alt='image'
-            ></img>
-            <img
-              className='flex-none py-6 px-3 first:p1-6 last:pr-6 w-64 h-64 rounded-full'
-              src='https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1'
-              alt='image'
-            ></img>
-            <img
-              className='flex-none py-6 px-3 first:p1-6 last:pr-6 w-64 h-64 rounded-full'
-              src='https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1'
-              alt='image'
-            ></img>
-            <img
-              className='flex-none py-6 px-3 first:p1-6 last:pr-6 w-64 h-64 rounded-full'
-              src='https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1'
-              alt='image'
-            ></img>
-            <img
-              className='flex-none py-6 px-3 first:p1-6 last:pr-6 w-64 h-64 rounded-full'
-              src='https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1'
-              alt='image'
-            ></img>
+        {/* z index */}
+        <div className='flex -space-x-3'>
+          <div className='z-40 w-16 h-16 rounded-full flex items-center ring-2 bg-lime-500 shadow-lg justify-center'>
+            01
           </div>
-          <div className='overflow-y-auto h-72'>
-            <img
-              className='flex-none py-6 px-3 first:p1-6 last:pr-6 w-64 h-64 rounded-full'
-              src='https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1'
-              alt='image'
-            ></img>
-            <img
-              className='flex-none py-6 px-3 first:p1-6 last:pr-6 w-64 h-64 rounded-full'
-              src='https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1'
-              alt='image'
-            ></img>
-            <img
-              className='flex-none py-6 px-3 first:p1-6 last:pr-6 w-64 h-64 rounded-full'
-              src='https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1'
-              alt='image'
-            ></img>
-            <img
-              className='flex-none py-6 px-3 first:p1-6 last:pr-6 w-64 h-64 rounded-full'
-              src='https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1'
-              alt='image'
-            ></img>
-            <img
-              className='flex-none py-6 px-3 first:p1-6 last:pr-6 w-64 h-64 rounded-full'
-              src='https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1'
-              alt='image'
-            ></img>
+          <div className='z-30 w-16 h-16 rounded-full flex items-center ring-2 bg-lime-500 shadow-lg justify-center'>
+            02
+          </div>
+          <div className='z-20 w-16 h-16 rounded-full flex items-center ring-2 bg-lime-500 shadow-lg justify-center'>
+            03
+          </div>
+          <div className='z-10 w-16 h-16 rounded-full flex items-center ring-2 bg-lime-500 shadow-lg justify-center'>
+            04
+          </div>
+          <div className='z-0 w-16 h-16 rounded-full flex items-center ring-2 bg-lime-500 shadow-lg justify-center'>
+            05
           </div>
         </div>
+        {/* object index */}
+        <img
+          className=' object-none object-left-top w-64 h-64 '
+          src='https://images.unsplash.com/photo-1527377667-83c6c76f963f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWRkcmVzc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
+          alt='None'
+        ></img>
       </div>
     </main>
   );
