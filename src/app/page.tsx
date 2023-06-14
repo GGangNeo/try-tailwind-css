@@ -3,38 +3,29 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className='text-white Parent bg-slate-900 h-screen '>
-      <div className='container'>
-        {/* visibility */}
-        <div className='grid grid-cols-3 gap-4'>
-          <div className='bg-teal-500'>01</div>
-          <div className='bg-teal-500 invisible'>02</div>
-          <div className='bg-teal-500'>03</div>
-        </div>
-        {/* z index */}
-        <div className='flex -space-x-3'>
-          <div className='z-40 w-16 h-16 rounded-full flex items-center ring-2 bg-lime-500 shadow-lg justify-center'>
-            01
-          </div>
-          <div className='z-30 w-16 h-16 rounded-full flex items-center ring-2 bg-lime-500 shadow-lg justify-center'>
-            02
-          </div>
-          <div className='z-20 w-16 h-16 rounded-full flex items-center ring-2 bg-lime-500 shadow-lg justify-center'>
-            03
-          </div>
-          <div className='z-10 w-16 h-16 rounded-full flex items-center ring-2 bg-lime-500 shadow-lg justify-center'>
-            04
-          </div>
-          <div className='z-0 w-16 h-16 rounded-full flex items-center ring-2 bg-lime-500 shadow-lg justify-center'>
-            05
-          </div>
-        </div>
-        {/* object index */}
-        <img
-          className=' object-none object-left-top w-64 h-64 '
-          src='https://images.unsplash.com/photo-1527377667-83c6c76f963f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWRkcmVzc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
-          alt='None'
-        ></img>
+      {/* Border  */}
+      <div className='border py-4 border-indigo-500'> 1 </div>
+      <div className='border-4 py-4 border-yellow-500'> 2 </div>
+      <div className='border-8 py-4 border-indigo-500'> 3 </div>
+      <div className='border-b-4 py-4 border-yellow-500'> 4 </div>
+      <div className='border-l-4 border-b-8 py-4 border-indigo-500'> 5 </div>
+      <input
+        type='text'
+        className='py-8  border-4 border-dashed border-fuchsia-500'
+      />
+      {/* Divide */}
+      <div className=' grid grid-rows-3 divide-y-4 divide-amber-500 divide-dashed'>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
       </div>
+      {/* outline */}
+      <div className='py-4 border-4 w-20 h-20 border-fuchsia-500 outline-4 outline-dashed outline-lime-500 px-4 mx-20'></div>
+      {/* ring */}
+      <button className='py-4 px-4 mx-4 my-4 ring-4 ring-offset-4 ring-pink-500 ring-inset rounded-lg'>
+        {" "}
+        Button{" "}
+      </button>
     </main>
   );
 }
