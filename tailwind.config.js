@@ -7,9 +7,9 @@ module.exports = {
   ],
   theme: {
     // same as mx-auto option
-    container: {
-      center: true,
-    },
+    // container: {
+    //   center: true,
+    // },
     // screens: {
     //   sm: "480px",
     //   md: "768px",
@@ -26,16 +26,16 @@ module.exports = {
     // },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        // "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        // "gradient-conic":
+        //   "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors: {
-        customGreen: {
-          s1: "#370699",
-          s2: "#99068d",
-        },
-      },
+      // colors: {
+      // customGreen: {
+      // s1: "#370699",
+      // s2: "#99068d",
+      // },
+      // },
     },
   },
   plugins: [],
