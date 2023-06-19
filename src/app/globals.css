@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* html {
+    @apply text-red-400;
+  } */
+  h1 {
+    @apply py-3 font-bold text-3xl;
+  }
+  h2 {
+    @apply py-2 font-semibold text-xl;
+  }
+  a {
+    @apply underline underline-offset-2 decoration-double decoration-1 capitalize decoration-pink-400/80 text-lime-600 hover:text-purple-400 transition;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-lg hover:transition hover:duration-300 hover:opacity-50 text-yellow-300;
+  }
+
+  .btn-primary {
+    @apply bg-slate-600;
+  }
+
+  .btn-secondary {
+    @apply bg-fuchsia-400;
+  }
+}
