@@ -9,15 +9,25 @@
   h1 {
     @apply py-3 font-bold text-3xl;
   }
+
   h2 {
     @apply py-2 font-semibold text-xl;
   }
+
   a {
-    @apply underline underline-offset-2 decoration-double decoration-1 capitalize decoration-pink-400/80 text-lime-600 hover:text-purple-400 transition;
+    @apply underline underline-offset-2 decoration-double decoration-1 capitalize decoration-pink-400/80 text-lime-600;
   }
 
   .btn {
-    @apply px-4 py-2 rounded-lg hover:transition hover:duration-300 hover:opacity-50 text-yellow-300;
+    @apply px-4 py-2 rounded-lg text-yellow-300 duration-500 delay-200 transition;
+  }
+
+  .btn:hover {
+    @apply text-lime-600;
+  }
+
+  .btn:disabled {
+    @apply text-gray-100  bg-gray-400/75;
   }
 
   .btn-primary {

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { text } from "stream/consumers";
 
 export default function Home() {
   return (
@@ -12,10 +13,21 @@ export default function Home() {
           <button className='btn btn-primary'>This is a button.</button>
         </div>
         <div>
-          <button className='btn btn-secondary '>This is a button.</button>
+          <button className='btn btn-secondary '>
+            This is the secondary button.
+          </button>
         </div>
+        <div>
+          <button disabled className='btn btn-primary'>
+            This is the third button.
+          </button>
+        </div>
+
         <input type='checkbox'></input>
         <label>Check box</label>
+        <div>
+          <input type='email' placeholder='E-mail' required></input>
+        </div>
         <div>
           <select>
             <option> option 1 </option>
